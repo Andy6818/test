@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Replace with your MongoDB Atlas connection string
 const mongoAtlasUri = "mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/crud";
 
-mongoose.connect(mongoAtlasUri, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(mongoAtlasUri, { })
   .then(() => console.log('Connected to MongoDB Atlas'))
   .catch(err => console.error('MongoDB Atlas connection error:', err));
 
