@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Replace with your MongoDB Atlas connection string
-const mongoAtlasUri = "mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/mongodb";
+const mongoAtlasUri = "mongodb+srv://andytst2005:B11cFuru9j0f47qt@cluster0.rqgds42.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/crud";
 
 mongoose.connect(mongoAtlasUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB Atlas'))
